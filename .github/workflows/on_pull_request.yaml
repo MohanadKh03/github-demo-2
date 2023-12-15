@@ -1,9 +1,13 @@
-name: workflow1
-on: push
-
+name: random name
+on: 
+  pull_request:
+    branches:
+    - main
 jobs:
-  job1:
-    runs-on: ubunutu-latest
+  abcJob:
+    runs-on: ubuntu-latest
     steps:
-      - name: hello
-        run: echo "Hello"
+      - name: TEST
+        uses: actions/checkout@v4
+      - name: TESTING SHELL
+        run: echo "HELLO WORLD ${{ runner.os }}"
