@@ -1,0 +1,9 @@
+name: workflow1
+on: pull_request
+
+jobs:
+  job1:
+    runs-on: ubunutu-latest
+    steps:
+      - name: hello
+        run: echo "Hello"
