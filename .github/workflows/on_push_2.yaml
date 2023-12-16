@@ -1,0 +1,10 @@
+name: workflow
+on: push
+
+jobs:
+  blabla:
+    runs-on: ubuntu-latest
+    steps:
+      - name : command name
+        run  : echo "Hello world"
+      - run  : echo "${{ runner.os }}"
